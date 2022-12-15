@@ -5,7 +5,6 @@ import styles from './navbar.module.css';
 import {navLinks, navTools} from './data';
 import Link from 'next/link';
 import React, { useState, useEffect, useRef  } from 'react';
-import ModalNavSidebar from '../Modal/modalNavSidebar'
 
 
 
