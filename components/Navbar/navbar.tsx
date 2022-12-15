@@ -37,7 +37,7 @@ export default function Navbar() {
   // }, [isNavSidebarOpen]);
 
   
-  const NavIconItem = ({icon : any}) => {
+  const NavIconItem = ({icon}:{data:any}) => {
   return typeof icon !== 'undefined' ? 
   (<Image src={icon.path} alt={icon.alt} width={23.49} height={24} className={"mt-1" +styles.imgIcon}/> ) : (<></>)
 }
@@ -55,7 +55,7 @@ const NavItem = ({data: any, onClick:any}) => {
   )
 }
 
-const NavLink = ({data:any}) => {
+const NavLink = ({data}:{data:any}) => {
   return (
     <ul className="flex sm:flex-col items-center p-4 flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
       {
@@ -71,7 +71,7 @@ const NavLink = ({data:any}) => {
 }
 
 
-const NavTool = ({data:any}) => {
+const NavTool = ({data}:{data:any}) => {
   return (
     <ul className="flex sm:flex-col items-center p-4 flex-row md:space-x-3 md:mt-0 md:text-sm md:font-medium md:border-0">
       <NavItem data={data[0]} onClick={handleChangeDropdown}/>
