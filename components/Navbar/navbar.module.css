@@ -1,0 +1,27 @@
+.imgFrame {
+  height: 75.77px;
+  width: 98px;
+}
+
+.imgIcon {
+  height: 23px;
+  width: 24px;
+}
+
+.divideTool {
+  height: 16px;
+  width: 0.98px;
+  background-color: #D3D3D3;
+  margin-left: 17px;
+  margin-right: 20px;
+}
+
+#navSideBar {
+  display: none !important;
+}
+
+@media screen and (min-width: 640px) {
+  .nav-sidebar {
+    display: none !important;
+  }
+}
