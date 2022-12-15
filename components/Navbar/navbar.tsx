@@ -37,7 +37,7 @@ export default function Navbar() {
   // }, [isNavSidebarOpen]);
 
   
-  const NavIconItem = ({icon}:{icon:any}) => {
+const NavIconItem = ({icon}:{icon:any}) => {
   return typeof icon !== 'undefined' ? 
   (<Image src={icon.path} alt={icon.alt} width={23.49} height={24} className={"mt-1" +styles.imgIcon}/> ) : (<></>)
 }
@@ -100,7 +100,7 @@ const NavTool = ({data}:{data:any}) => {
 	return (
 		<nav className="px-2 sm:px-4 py-2.5">
       <div className="container flex flex-wrap items-center justify-between sm:justify-between mx-auto">
-        <a href="#" class="flex items-center">
+        <a href="#" className="flex items-center">
           <Image
             src='/img/homepage/header/Frame.png'
             alt='logo'
@@ -115,12 +115,12 @@ const NavTool = ({data}:{data:any}) => {
           <NavTool data={navTools}/>
         </div>
         <div className="space-y-2 sm:block hidden cursor-pointer" onClick={handleChangeNavSidebar}>
-          <div class="w-8 h-0.5 bg-primary"></div>
-          <div class="w-8 h-0.5 bg-primary"></div>
-          <div class="w-8 h-0.5 bg-primary"></div>
+          <div className="w-8 h-0.5 bg-primary"></div>
+          <div className="w-8 h-0.5 bg-primary"></div>
+          <div className="w-8 h-0.5 bg-primary"></div>
         </div>
         {/*<ModalNavSidebar/>*/}
-        <div ref={navSideBar} style={{display: isNavSidebarOpen ? 'block' : 'none'}} className={`flex flex-col justy nav-sidebar absolute z-30 right-0 top-0.5 h-[1500px] w-[300px] bg-white drop-shadow-[-3px_3px_5px_gray]` } id="navSideBar">
+        <div style={{display: isNavSidebarOpen ? 'block' : 'none'}} className={`flex flex-col justy nav-sidebar absolute z-30 right-0 top-0.5 h-[1500px] w-[300px] bg-white drop-shadow-[-3px_3px_5px_gray]` }>
            <div className="text-primary text-5xl text-right mt-3 mr-4" onClick={handleChangeNavSidebar}>X</div>
            <div className="w-full h-0.5 bg-gray-300 mt-3"></div>
            <NavLink data={navLinks}/>

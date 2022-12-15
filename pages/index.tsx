@@ -5,8 +5,8 @@ import Navbar from '../components/Navbar/navbar'
 import BannerIntroTop from '../components/banner/bannerIntroTop'
 import BannerIntroBottom from '../components/banner/bannerIntroBottom'
 import BannerIntroList from '../components/banner/bannerIntroList'
-import BannerEndTop from '../components/banner/BannerEndTop'
-import BannerEndBot from '../components/banner/BannerEndBot'
+// import BannerEndTop from '../components/banner/BannerEndTop'
+import BannerEndBot from '../components/banner/bannerEndBot'
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
           
           <div className="flex justify-center p-6">
             <div className="max-w-[1280px]">
-              <Image src="/img/homepage/bannerIntroBottom/pattern.png" width={340} height={592} 
+              <Image src="/img/homepage/bannerIntroBottom/pattern.png" alt="bg" width={340} height={592} 
           className="absolute right-0 mt-10"/>
               <BannerIntroBottom/>
             </div>
@@ -89,44 +89,44 @@ export default function Home() {
                 <p className="">Subscribe to our newsletter to receive product updates</p>
                 <div className="relative">
                   <button className="rounded-full bg-primary py-1 px-3 text-white font-semibold absolute right-0 mr-4 mt-1">Send</button>
-                  <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-full py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Your email address" type="text" name="email"/>
+                  <input className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-full py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Your email address" type="text" name="email"/>
                   
                 </div>
                 <div className="flex sm:flex-col justify-between items-center">
                   <p className="">Connect with us</p>
                   <Image
                     src='/img/homepage/footer/facebook.png'
-                    alt='logo'
                     width={36}
                     height={36}
+                    alt="SocialFa"
                     className={styles.imgFrame}
                   />
                   <Image
                     src='/img/homepage/footer/youtube.png'
-                    alt='logo'
                     width={36}
                     height={36}
+                    alt="SocialYtb"
                     className={styles.imgFrame}
                   />
                   <Image
                     src='/img/homepage/footer/ins.png'
-                    alt='logo'
                     width={36}
                     height={36}
+                    alt="SocialIns"
                     className={styles.imgFrame}
                   />
                   <Image
                     src='/img/homepage/footer/google.png'
-                    alt='logo'
                     width={36}
                     height={36}
+                    alt="Socialgole"
                     className={styles.imgFrame}
                   />
                   <Image
                     src='/img/homepage/footer/linkedin.png'
-                    alt='logo'
                     width={36}
                     height={36}
+                    alt="SocialLin"
                     className={styles.imgFrame}
                   />
                 </div>
