@@ -41,13 +41,13 @@ export default function Home() {
             <BannerIntroList />
           </div>
         </div>
-        <div className="mt-20 w-full items-center min-h-[760px] bg-[url(/img/homepage/bannerEnd/bg-top.png)]">
+       {/* <div className="mt-20 w-full items-center min-h-[760px] bg-[url(/img/homepage/bannerEnd/bg-top.png)]">
           <div className="flex justify-center  px-6 relative py-5">
             <div className="max-w-[1280px] items-center">
               <BannerEndTop/>
             </div>
           </div>
-        </div>
+        </div>*/}
         <div className="w-full justify-center bg-[url(/img/homepage/bannerEnd/bg-bot.png)]">
           <div className="flex justify-center px-6">
             <div className="max-w-[1280px]">
