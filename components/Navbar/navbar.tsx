@@ -37,12 +37,12 @@ export default function Navbar() {
   // }, [isNavSidebarOpen]);
 
   
-  const NavIconItem = ({icon}:{data:any}) => {
+  const NavIconItem = ({icon}:{icon:any}) => {
   return typeof icon !== 'undefined' ? 
   (<Image src={icon.path} alt={icon.alt} width={23.49} height={24} className={"mt-1" +styles.imgIcon}/> ) : (<></>)
 }
 
-const NavItem = ({data: any, onClick:any}) => {
+const NavItem = ({data, onClick} : {data: any, onClick: any}) => {
   return (
     <li className="flex cursor-pointer">
       <NavIconItem icon={data.icon}/>
