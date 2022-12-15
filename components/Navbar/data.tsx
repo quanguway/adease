@@ -6,15 +6,18 @@ export const navLinks : { title: string, path: string, active: boolean }[] = [
   },
   {
     'title': "Features",
-    'path': "#"
+    'path': "#",
+    'active': false,
   },
   {
     'title': "Product",
     'path': "#",
+    'active': false,
   },
   {
     'title': "Pricing",
-    'path': "#"
+    'path': "#",
+    'active': false,
   }
 ];
 
