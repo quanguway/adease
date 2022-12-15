@@ -37,12 +37,12 @@ export default function Navbar() {
   // }, [isNavSidebarOpen]);
 
   
-  const NavIconItem = ({icon : any}) => {
+  const NavIconItem = ({icon}:{icon:any}) => {
   return typeof icon !== 'undefined' ? 
   (<Image src={icon.path} alt={icon.alt} width={23.49} height={24} className={"mt-1" +styles.imgIcon}/> ) : (<></>)
 }
 
-const NavItem = ({data: any, onClick:any}) => {
+const NavItem = ({data, onClick} : {data: any, onClick: any}) => {
   return (
     <li className="flex cursor-pointer">
       <NavIconItem icon={data.icon}/>
@@ -55,13 +55,13 @@ const NavItem = ({data: any, onClick:any}) => {
   )
 }
 
-const NavLink = ({data:any}) => {
+const NavLink = ({data}:{data:any}) => {
   return (
     <ul className="flex sm:flex-col items-center p-4 flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
       {
         navLinks.map((data, index) => {
           return (
-            <NavItem data={data}/>
+            <NavItem data={data} onClick={}/>
           );
         })
       }
@@ -71,7 +71,7 @@ const NavLink = ({data:any}) => {
 }
 
 
-const NavTool = ({data:any}) => {
+const NavTool = ({data}:{data:any}) => {
   return (
     <ul className="flex sm:flex-col items-center p-4 flex-row md:space-x-3 md:mt-0 md:text-sm md:font-medium md:border-0">
       <NavItem data={data[0]} onClick={handleChangeDropdown}/>
@@ -90,7 +90,7 @@ const NavTool = ({data:any}) => {
         </ul>
     </div>
       <li className={styles.divideTool}></li>
-      <NavItem data={data[1]}/>
+      <NavItem data={data[1]} onClick={}/>
       <button className="rounded-full bg-primary py-2 px-6 text-white">Request a demo</button>
     </ul>
   )
