@@ -1,11 +1,11 @@
-// @ts-ignore
+// @tsx-ignore
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from './navbar.module.css';
-import {navLinks, navTools} from './data.tsx';
+import {navLinks, navTools} from './data';
 import Link from 'next/link';
 import React, { useState, useEffect, useRef  } from 'react';
-import ModalNavSidebar from '../Modal/modalNavSidebar.tsx'
+import ModalNavSidebar from '../Modal/modalNavSidebar'
 
 
 

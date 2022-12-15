@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Navbar from '../components/Navbar/navbar.tsx'
-import BannerIntroTop from '../components/banner/bannerIntroTop.tsx'
-import BannerIntroBottom from '../components/banner/bannerIntroBottom.tsx'
-import BannerIntroList from '../components/banner/bannerIntroList.tsx'
-import BannerEndTop from '../components/banner/BannerEndTop.tsx'
-import BannerEndBot from '../components/banner/BannerEndBot.tsx'
+import Navbar from '../components/Navbar/navbar'
+import BannerIntroTop from '../components/banner/bannerIntroTop'
+import BannerIntroBottom from '../components/banner/bannerIntroBottom'
+import BannerIntroList from '../components/banner/bannerIntroList'
+import BannerEndTop from '../components/banner/BannerEndTop'
+import BannerEndBot from '../components/banner/BannerEndBot'
 
 export default function Home() {
   return (

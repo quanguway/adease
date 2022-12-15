@@ -1,5 +1,5 @@
-import {BannerIntroItem} from '../patials/patials.tsx'
-import {dataBannerItem} from '../patials/data.tsx'
+import {BannerIntroItem} from '../patials/patials'
+import {dataBannerItem} from '../patials/data'
 
 export default function BannerIntroList () {
   return (
