@@ -1,6 +1,6 @@
 import Image from 'next/image' 
-import {IconLabel} from '../patials/patials.tsx'
-import {dataIconLabels} from '../patials/data.tsx'
+import {IconLabel} from '../patials/patials'
+import {dataIconLabels} from '../patials/data'
 
 
 export default function BannerIntroBottom (){

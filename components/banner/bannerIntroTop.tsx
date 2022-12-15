@@ -1,6 +1,6 @@
 import Image from 'next/image' 
-import {CheckBoxInfo} from '../patials/patials.tsx'
-import {dataCheckBoxInfos} from '../patials/data.tsx'
+import {CheckBoxInfo} from '../patials/patials'
+import {dataCheckBoxInfos} from '../patials/data'
 
 
 export default function BannerIntroTop () {
