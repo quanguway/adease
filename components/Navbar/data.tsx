@@ -21,7 +21,7 @@ export const navLinks : { title: string, path: string, active: boolean }[] = [
   }
 ];
 
-export const navTools : { title: string, path: string, dropdown: boolean }[] = [
+export const navTools : { title: string, path: string, icon: { path: string, alt: string, }, dropdown: boolean, }[] = [
   { 
     'title': "English", 
     'path': "#",
@@ -38,6 +38,6 @@ export const navTools : { title: string, path: string, dropdown: boolean }[] = [
       'path' : "/img/homepage/header/Union.svg",
       'alt' : "Union"
     },
-
+    'dropdown' : false,
   },
 ];
