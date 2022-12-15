@@ -52,7 +52,7 @@ export const BannerIntroItem = ({props}:{props:any}) => {
       </div>
     
 
-      <div class={`items-center ${shadowColor}`}>
+      <div className={`items-center ${shadowColor}`}>
         <Image
           src={props.image}
           alt='logo'
@@ -104,10 +104,10 @@ export const BannerSliderTop = ({}) => {
               </p>
               <div className="w-full flex justify-center mt-10">
                 <div className="flex flex-row space-x-[12px]">
-                  <Image src="/img/homepage/bannerEnd/icon_change_slider.svg" width={16} height={16} />
-                  <Image src="/img/homepage/bannerEnd/icon_change_slider_active.svg" width={16} height={16} />
-                  <Image src="/img/homepage/bannerEnd/icon_change_slider.svg" width={16} height={16} />
-                  <Image src="/img/homepage/bannerEnd/icon_change_slider.svg" width={16} height={16} />
+                  <Image src="/img/homepage/bannerEnd/icon_change_slider.svg" alt="slider" width={16} height={16} />
+                  <Image src="/img/homepage/bannerEnd/icon_change_slider_active.svg" alt="slider" width={16} height={16} />
+                  <Image src="/img/homepage/bannerEnd/icon_change_slider.svg" alt="slider" width={16} height={16} />
+                  <Image src="/img/homepage/bannerEnd/icon_change_slider.svg" alt="slider" width={16} height={16} />
                 </div>
               </div>
                 

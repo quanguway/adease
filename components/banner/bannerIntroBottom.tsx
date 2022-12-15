@@ -32,7 +32,7 @@ export default function BannerIntroBottom (){
           </p>
           
           <div className="flex mt-[16px] justify-between sm:flex-col sm:justify-center px-10 mt-10">
-          	{dataIconLabels.map((data, index) => {
+          	{(dataIconLabels as unknown as any[]).map((data, index) => {
           		return (
           			<IconLabel props={data}/>
           		)

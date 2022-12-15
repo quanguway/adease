@@ -10,7 +10,7 @@ export default function BannerEndBot (){
         Discover how AdEase makes digital marketing easy. 
       </p>
       <div className="flex my-[16px] justify-center">
-            {dataCheckBoxInfos.map((data, index) => {
+            {(dataCheckBoxInfos as unknown as any[]).map((data, index) => {
               return (<CheckBoxInfo props={data}/>) 
             })}
             

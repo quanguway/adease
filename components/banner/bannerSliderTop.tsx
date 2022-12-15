@@ -31,10 +31,10 @@ export default function BannerSliderTop (){
             Founder of Mango Media Studio
           </p>
           <div className="flex flex-row space-x-[12px] fixed">
-            <Image src="/img/homepage/bannerEnd/icon_change_slider.svg" width={16} height={16} />
-            <Image src="/img/homepage/bannerEnd/icon_change_slider_active.svg" width={16} height={16} />
-            <Image src="/img/homepage/bannerEnd/icon_change_slider.svg" width={16} height={16} />
-            <Image src="/img/homepage/bannerEnd/icon_change_slider.svg" width={16} height={16} />
+            <Image src="/img/homepage/bannerEnd/icon_change_slider.svg" alt="slider" width={16} height={16} />
+            <Image src="/img/homepage/bannerEnd/icon_change_slider_active.svg" alt="slider" width={16} height={16} />
+            <Image src="/img/homepage/bannerEnd/icon_change_slider.svg" alt="slider" width={16} height={16} />
+            <Image src="/img/homepage/bannerEnd/icon_change_slider.svg" alt="slider" width={16} height={16} />
           </div>
           
         </div>

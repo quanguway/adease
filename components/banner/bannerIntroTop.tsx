@@ -23,7 +23,7 @@ export default function BannerIntroTop () {
             <button className="rounded-full bg-primary py-2 px-6 text-white hover:bg-primarylight">Book a demo</button>
           </div>
           <div className="flex mt-[16px]">
-            {dataCheckBoxInfos.map((data, index) => {
+            {(dataCheckBoxInfos as unknown as any[]).map((data, index) => {
               return (<CheckBoxInfo props={data}/>) 
             })}
             
