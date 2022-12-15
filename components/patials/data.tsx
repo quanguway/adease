@@ -1,9 +1,9 @@
-export const dataCheckBoxInfos = [
+export const dataCheckBoxInfos : {label: string} = [
 	{'label': 'No credit card needed'},
 	{'label' : 'Cancel anytime'}
 ];
 
-export const dataIconLabels = [
+export const dataIconLabels : {label: string, icon: string, alt: string} = [
 	{'label': 'AdStragery','icon': '/img/homepage/bannerIntroBottom/AdStragery.svg', 'alt': 'AdStragery'},
 	{'label': 'AdOperations','icon': '/img/homepage/bannerIntroBottom/AdOperations.svg', 'alt': 'AdOperations'},
 	{'label': 'AdAnlytics','icon': '/img/homepage/bannerIntroBottom/AdAnlytics.svg', 'alt': 'AdAnlytics'},
