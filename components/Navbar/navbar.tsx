@@ -61,7 +61,7 @@ const NavLink = ({data}:{data:any}) => {
       {
         navLinks.map((data, index) => {
           return (
-            <NavItem data={data}/>
+            <NavItem data={data} onClick={}/>
           );
         })
       }
@@ -90,7 +90,7 @@ const NavTool = ({data}:{data:any}) => {
         </ul>
     </div>
       <li className={styles.divideTool}></li>
-      <NavItem data={data[1]}/>
+      <NavItem data={data[1]} onClick={}/>
       <button className="rounded-full bg-primary py-2 px-6 text-white">Request a demo</button>
     </ul>
   )
