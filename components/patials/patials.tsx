@@ -1,6 +1,6 @@
 import Image from 'next/image' 
 
-export const CheckBoxInfo = ({props}) => {
+export const CheckBoxInfo = ({props:any}) => {
 	return (
 		<div className="flex items-center mr-[24px]">
       <Image className="mr-[4px]" src='/img/homepage/header/CheckboxCustom.svg' alt='checkbox' width={31} height={31}/>
@@ -9,7 +9,7 @@ export const CheckBoxInfo = ({props}) => {
 	)	
 }
 
-export const IconLabel = ({props}) => {
+export const IconLabel = ({props:any}) => {
 	return (
 		<div className="flex flex-col">
       <Image src={props.icon} width={62} height={62} alt={props.alt} />
@@ -20,7 +20,7 @@ export const IconLabel = ({props}) => {
 
  
 
-export const BannerIntroItem = ({props}) => {
+export const BannerIntroItem = ({props:any}) => {
   const rowReverse = props.reverse ? "flex-row-reverse" : "";
   const bgReverse = props.reverse ? "right-0" : "left-0";
   const directionShadow = props.reverse ? "40px" : "-40px";
