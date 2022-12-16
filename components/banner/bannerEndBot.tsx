@@ -5,8 +5,8 @@ import {dataCheckBoxInfos} from '../patials/data'
 export default function BannerEndBot (){
 	return (
     <div className="flex flex-col justify-center w-full min-h-[486px]">
-    	<h3 className="text-[42px] text-center font-bold mt-10 text-center">Start your 14-day free trial today</h3>
-      <p className="text-2xl text-center">
+    	<h3 className="text-[42px] sm:text-3xl text-center font-bold mt-10 text-center">Start your 14-day free trial today</h3>
+      <p className="text-2xl sm:text-lg text-center mt-3">
         Discover how AdEase makes digital marketing easy. 
       </p>
       <div className="flex my-[16px] justify-center">

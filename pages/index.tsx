@@ -37,7 +37,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center px-6">
-            <div className="max-w-[1280px] relative">
+          <div className="max-w-[1280px] relative">
             <BannerIntroList />
           </div>
         </div>
@@ -57,10 +57,10 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="bg-gray-900 min-h-[528px]">
-          <div className="flex justify-center px-6 min-h-[354px]">
-            <div className="max-w-[1280px] flex items-center justify-between space-x-[481px] md:space-x-[81px]">
-              <div className="flex flex-col space-y-[16px]">
+      <footer className="bg-gray-900 min-h-[528px] sm:px-5">
+          <div className="flex justify-center px-6 min-h-[354px] sm:justify-start sm:px-0 sm:pt-7">
+            <div className="max-w-[1280px] flex items-center justify-between space-x-[481px] sm:justify-start sm:items-start md:space-x-[81px] sm:flex-col sm:space-x-0">
+              <div className="flex flex-col space-y-[16px] sm:space-y-4">
                 <Image
                   src='/img/homepage/header/Frame.png'
                   alt='logo'
@@ -70,7 +70,7 @@ export default function Home() {
                 />
                 <p className="text-white">Digital Marketing Made Easy</p>
                 <p className="text-white text-[20px] font-semibold">Quick links</p>
-                <div className="flex flex-row justify-between text-gray-300 space-x-[73px]">
+                <div className="flex flex-row justify-between text-gray-300 space-x-[73px] sm:flex-col sm:space-x-0">
                   <div className="flex flex-col">
                     <a href="" className="text-primary">Home</a>
                     <a href="">Features</a>
@@ -84,7 +84,7 @@ export default function Home() {
                 </div>
 
               </div>
-              <div className="flex flex-col min-h-full justify-end text-gray-300 space-y-[16px]">
+              <div className="flex flex-col min-h-full justify-end text-gray-300 space-y-[16px] sm:min-h-0 sm:mt-5">
                 <p className="font-semibold text-[20px] text-white">Join our newsletter</p>
                 <p className="">Subscribe to our newsletter to receive product updates</p>
                 <div className="relative">
@@ -92,7 +92,7 @@ export default function Home() {
                   <input className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-full py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Your email address" type="text" name="email"/>
                   
                 </div>
-                <div className="flex sm:flex-col justify-between items-center">
+                <div className="flex justify-between items-center sm:justify-start sm:space-x-1">
                   <p className="">Connect with us</p>
                   <Image
                     src='/img/homepage/footer/facebook.png'
@@ -135,15 +135,16 @@ export default function Home() {
             </div>
 
           </div>
-          <div className="w-full h-0.5 bg-gray-300 mt-[88px]"></div>
+          <div className="w-full h-0.5 bg-gray-300 mt-[88px] right-0 sm:mt-5"></div>
 
-          <div className="flex min-h-[85px] justify-center items-center px-6">
-            <div className="max-w-[1280px] flex items-center justify-between space-x-[610px] md:space-x-[210px]">
-              <p className="text-gray-300">Copyright © 2021 <span className="text-primary">AdEase</span>. Site by Uway</p>
-              <div className="flex text-gray-300 md:flex-col">
-                <p className="mt-1">English</p>
+          <div className="flex min-h-[85px] justify-center items-center px-6 sm:px-0 sm:justify-start">
+            <div className="max-w-[1280px] flex items-center justify-between space-x-[610px] md:space-x-[210px] sm:space-x-[30px]">
+              <p className="text-gray-300 sm:text-xs">Copyright © 2021 <span className="text-primary">AdEase</span>. Site by Uway</p>
+    
+              <div className="flex text-gray-300 sm:mb-4">
+                <p className="mt-1 sm:text-xs">English</p>
                 <Image src='/img/homepage/header/dropdown.svg' alt='bucket' width={24} height={24} className="mr-2"/>
-                <button className="rounded-full border-2 border-primary bg-gray-900 py-0.5 px-4 text-primary">Sign in</button>
+                <button className="rounded-full border-2 border-primary bg-gray-900 py-0.5 px-4 text-primary sm:whitespace-nowrap sm:text-xs sm:flex">Sign in</button>
               </div>
             </div>
           </div>

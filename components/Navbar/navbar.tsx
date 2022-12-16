@@ -57,7 +57,7 @@ const NavItem = ({data, onClick} : {data: any, onClick: any}) => {
 
 const NavLink = ({data}:{data:any}) => {
   return (
-    <ul className="flex sm:flex-col items-center p-4 flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
+    <ul className="flex items-center flex-row md:mt-0 md:text-sm md:font-medium">
       {
         navLinks.map((data, index) => {
           return (
@@ -91,7 +91,7 @@ const NavTool = ({data}:{data:any}) => {
     </div>
       <li className={styles.divideTool}></li>
       <NavItem data={data[1]} onClick={""}/>
-      <button className="rounded-full bg-primary py-2 px-6 text-white">Request a demo</button>
+      <button className="rounded-full bg-primary py-2 px-6 text-white flex flex-nowrap">Request a demo</button>
     </ul>
   )
 }
@@ -99,15 +99,20 @@ const NavTool = ({data}:{data:any}) => {
 
 	return (
 		<nav className="px-2 sm:px-4 py-2.5">
-      <div className="container flex flex-wrap items-center justify-between sm:justify-between mx-auto">
+      <div className="container flex flex-nowrap items-center justify-between sm:justify-between mx-auto">
         <a href="#" className="flex items-center">
-          <Image
-            src='/img/homepage/header/Frame.png'
-            alt='logo'
-            width={98}
-            height={75.77}
-            className={styles.imgFrame}
-          />
+          <div className="w-[42px] h-[42px] relative">
+            
+            <Image
+              src='/img/homepage/header/Frame.png'
+              alt='logo'
+              layout='fill'
+              // objectFit='cover'
+              // width={80}
+              // height={200}
+              className=""
+            />
+          </div>
         </a>
         <div className="flex w-full w-auto sm:hidden items-center">
           <NavLink data={navLinks}/>
