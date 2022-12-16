@@ -11,8 +11,11 @@ export const CheckBoxInfo = ({props}:{props:any}) => {
 
 export const IconLabel = ({props}:{props:any}) => {
 	return (
-		<div className="flex flex-col">
-      <Image src={props.icon} width={62} height={62} alt={props.alt} />
+		<div className="flex flex-col items-center">
+      <div className=" w-[64px] h-[64px] sm:w-9 sm:h-9 relative">
+        <Image src={props.icon} layout="fill" alt={props.alt} />
+      </div>
+      
       <p className="font-semibold mt-2">{props.label}</p>
     </div>
 	)	
@@ -26,7 +29,7 @@ export const BannerIntroItem = ({props}:{props:any}) => {
   const directionShadow = props.reverse ? "40px" : "-40px";
   const shadowColor = props.shadow;
 	return (
-		<div className={`flex sm:flex-col mt-[83px] justify-between space-x-[70px] ${rowReverse}`}>
+		<div className={`flex sm:flex-col mt-[83px] justify-between space-x-[70px] sm:space-x-0 ${rowReverse}`}>
       <Image
           src={props.bg}
           alt='bg'
@@ -35,31 +38,31 @@ export const BannerIntroItem = ({props}:{props:any}) => {
           quality={40}
           className={`absolute ${bgReverse} mt-12`}
         />
-      <div>
-        <div className="flex flex-col flex-wrap max-w-[520px] md:min-h-[386px] mr-[30px] ">
-          <p className="font-bold text-primary text-2xl">
+      <div className="">
+        <div className="flex flex-col flex-wrap max-w-[520px] md:min-h-[386px] mr-[30px] sm:mr-0 ">
+          <p className="font-bold text-primary text-2xl sm:text-lg">
             {props.type} 
           </p>
-          <p className="text-[42px] font-bold">
+          <p className="text-[42px] sm:text-[32px] font-bold">
             {props.title}
           </p>
            <div className="list-disc" dangerouslySetInnerHTML={{ __html: props.content }}/>
            
-          <div className="mt-[36px]">
+          <div className="mt-[36px] sm:flex sm:justify-center">
             <button className="rounded-full bg-primary py-2 px-6 text-white">{props.button}</button>
           </div>
         </div>
       </div>
     
 
-      <div className={`items-center ${shadowColor}`}>
+      <div className={`items-center`}>
         <Image
           src={props.image}
           alt='logo'
           width={570}
           height={403}
           quality={40}
-          className={`rounded-lg`}
+          className={`rounded-lg ${shadowColor}`}
         />
       </div>
 

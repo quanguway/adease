@@ -28,7 +28,7 @@ module.exports = {
       // => @media (max-width: 1023px) { ... }
 
       'md': {'max': '832px'},
-      // => @media (max-width: 767px) { ... }
+      // => @media (max-width: 832px) { ... }
 
       'sm': {'max': '639px'},
       // => @media (max-width: 639px) { ... }
@@ -40,6 +40,10 @@ module.exports = {
         'banneritem1' : '-40px 50px 0px rgba(255, 171, 78, 0.36)',
         'banneritem2' : '40px 50px 0px rgba(172, 232, 232, 0.36)',
         'banneritem3' : '-40px 50px 0px rgba(250, 95, 26, 0.36)',
+
+        'banneritem1-sm' : '-13px 13px 0px rgba(255, 171, 78, 0.36)',
+        'banneritem2-sm' : '-13px 13px 0px rgba(172, 232, 232, 0.36)',
+        'banneritem3-sm' : '-13px 13px 0px rgba(250, 95, 26, 0.36)',
       }
     },
   },
