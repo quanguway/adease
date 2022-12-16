@@ -88,7 +88,7 @@ export default function Home() {
                 <p className="font-semibold text-[20px] text-white">Join our newsletter</p>
                 <p className="">Subscribe to our newsletter to receive product updates</p>
                 <div className="relative">
-                  <button className="rounded-full bg-primary py-1 px-3 text-white font-semibold absolute right-0 mr-4 mt-1">Send</button>
+                  <button className="rounded-full bg-primary py-1 px-3 text-white font-semibold absolute right-0 mr-4 mt-1 sm:text-xs sm:mt-1.5">Send</button>
                   <input className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-full py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Your email address" type="text" name="email"/>
                   
                 </div>
