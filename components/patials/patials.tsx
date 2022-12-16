@@ -12,8 +12,8 @@ export const CheckBoxInfo = ({props}:{props:any}) => {
 export const IconLabel = ({props}:{props:any}) => {
 	return (
 		<div className="flex flex-col items-center">
-      <div className=" w-[64px] h-[64px] sm:w-9 sm:h-9 relative">
-        <Image src={props.icon} layout="fill" alt={props.alt} />
+      <div className=" w-[64px] h-[64px] md:w-10 md:h-10 sm:w-9 sm:h-9 relative">
+        <Image src={props.icon} fill alt={props.alt} />
       </div>
       
       <p className="font-semibold mt-2">{props.label}</p>
@@ -29,7 +29,7 @@ export const BannerIntroItem = ({props}:{props:any}) => {
   const directionShadow = props.reverse ? "40px" : "-40px";
   const shadowColor = props.shadow;
 	return (
-		<div className={`flex sm:flex-col mt-[83px] justify-between space-x-[70px] sm:space-x-0 ${rowReverse}`}>
+		<div className={`flex mt-[83px] justify-between space-x-[70px] md:flex-col md:justify-center sm:space-x-0 ${rowReverse}`}>
       <Image
           src={props.bg}
           alt='bg'
@@ -40,10 +40,10 @@ export const BannerIntroItem = ({props}:{props:any}) => {
         />
       <div className="">
         <div className="flex flex-col flex-wrap max-w-[520px] md:min-h-[386px] mr-[30px] sm:mr-0 ">
-          <p className="font-bold text-primary text-2xl sm:text-lg">
+          <p className="font-bold text-primary text-2xl md:text-lg">
             {props.type} 
           </p>
-          <p className="text-[42px] sm:text-[32px] font-bold">
+          <p className="text-[42px] md:text-[32px] font-bold">
             {props.title}
           </p>
            <div className="list-disc" dangerouslySetInnerHTML={{ __html: props.content }}/>
