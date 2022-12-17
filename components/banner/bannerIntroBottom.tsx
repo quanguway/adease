@@ -5,7 +5,7 @@ import {dataIconLabels} from '../patials/data'
 
 export default function BannerIntroBottom (){
   return (
-    <div className="flex md:flex-row sm:flex-col sm:items-center">
+    <div className="flex md:flex-col md:items-center">
     	<div className="w-[600px] h-[417px] md:w-[390px] md:h-[290px] sm:w-[290px] sm:h-[190px] relative">
           <Image
             src='/img/homepage/bannerIntroBottom/illustration.png'

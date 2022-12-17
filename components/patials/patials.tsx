@@ -39,7 +39,7 @@ export const BannerIntroItem = ({props}:{props:any}) => {
           className={`absolute ${bgReverse} mt-12`}
         />
       <div className="">
-        <div className="flex flex-col flex-wrap max-w-[520px] md:min-h-[386px] mr-[30px] sm:mr-0 ">
+        <div className="flex flex-col flex-wrap max-w-[520px] md:min-h-[386px] sm:min-h-[350px] mr-[30px] sm:mr-0 ">
           <p className="font-bold text-primary text-2xl md:text-lg">
             {props.type} 
           </p>

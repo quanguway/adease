@@ -5,9 +5,9 @@ import {dataCheckBoxInfos} from '../patials/data'
 
 export default function BannerIntroTop () {
   return (
-    <div className="flex md:flex-row sm:flex-col sm:flex-col-reverse sm:items-center">
+    <div className="flex md:flex-row md:flex-col md:flex-col-reverse md:items-center">
       <div className="flex items-center sm:flex sm:justify-center ">
-        <div className="flex flex-col max-w-[630px] md:min-h-[386px] sm:justify-items-center">
+        <div className="flex flex-col max-w-[630px] md:min-h-[386px] sm:min-h-[200px] sm:justify-items-center">
           <p className="font-bold text-primary text-6xl md:text-4xl sm:mt-5 sm:text-3xl">
             Digital Marketing. Made Easy. 
           </p><br/>
@@ -34,7 +34,7 @@ export default function BannerIntroTop () {
           <Image
             src='/img/homepage/header/illustration.png'
             alt='logo'
-            layout="fill"
+            fill
             quality={60}
           />
       </div>
