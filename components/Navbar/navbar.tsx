@@ -42,7 +42,7 @@ const NavItem = ({data, onClick} : {data: any, onClick: any}) => {
     <li className="flex cursor-pointer sm:w-full sm:py-1 sm:px-3" onClick={onClick} >
       <NavIconItem icon={data.icon}/>
 
-      <a className={"block py-2 pl-3 pr-4 bg-blue-700 rounded font-semibold" + (data.active ?? false ? 'text-primary' : 'text-black') } href={data.path}>
+      <a className={"block py-2 pl-3 pr-4 bg-blue-700 rounded font-semibold " + (data.active ?? false ? 'text-primary' : 'text-black') } href={data.path}>
         {data.title} 
       </a>
       {data.dropdown ? (<Image src='/img/homepage/header/dropdown.svg' alt='bucket' width={24} height={24} className={"-ml-4 mt-1"}/>) : (<></>)}
@@ -60,7 +60,6 @@ const NavLink = ({data}:{data:any}) => {
           );
         })
       }
-      
     </ul>
   )
 }
@@ -85,7 +84,7 @@ const NavTool = ({data}:{data:any}) => {
         </ul>
     </div>
       <li className={'sm:hidden ' + styles.divideTool}></li>
-      <div className='hidden w-full bg-[#e5e7eb] sm:block'></div>
+      <div className='hidden h-[0.5px] w-full bg-[#e5e7eb] sm:block'></div>
 
       <NavItem data={data[1]} onClick={""}/>
 
