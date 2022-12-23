@@ -29,7 +29,7 @@ export const BannerIntroItem = ({props}:{props:any}) => {
   const directionShadow = props.reverse ? "40px" : "-40px";
   const shadowColor = props.shadow;
 	return (
-		<div className={`flex mt-[83px] justify-between space-x-[70px] md:flex-col md:justify-center sm:space-x-0 ${rowReverse}`}>
+		<div className={`flex mt-[90.71px] justify-between space-x-[70px] md:flex-col md:justify-center sm:space-x-0 ${rowReverse}`}>
       <Image
           src={props.bg}
           alt='bg'
@@ -38,7 +38,7 @@ export const BannerIntroItem = ({props}:{props:any}) => {
           quality={40}
           className={`absolute ${bgReverse} mt-12`}
         />
-      <div className="">
+      <div className="flex items-center">
         <div className="flex flex-col flex-wrap max-w-[520px] md:min-h-[386px] sm:min-h-[350px] mr-[30px] sm:mr-0 ">
           <p className="font-bold text-primary text-2xl md:text-lg">
             {props.type} 
@@ -46,7 +46,7 @@ export const BannerIntroItem = ({props}:{props:any}) => {
           <p className="text-[42px] md:text-[32px] font-bold">
             {props.title}
           </p>
-           <div className="list-disc" dangerouslySetInnerHTML={{ __html: props.content }}/>
+           <div className="list-disc text-lg" dangerouslySetInnerHTML={{ __html: props.content }}/>
            
           <div className="mt-[36px] sm:flex sm:justify-center">
             <button className="rounded-full bg-primary py-2 px-6 text-white">{props.button}</button>
@@ -55,14 +55,14 @@ export const BannerIntroItem = ({props}:{props:any}) => {
       </div>
     
 
-      <div className={`items-center`}>
+      <div className={`flex items-center`}>
         <Image
           src={props.image}
           alt='logo'
           width={570}
           height={403}
           quality={40}
-          className={`rounded-lg ${shadowColor}`}
+          className={`rounded-[24px] ${shadowColor}`}
         />
       </div>
 
@@ -71,56 +71,43 @@ export const BannerIntroItem = ({props}:{props:any}) => {
 }
 
 
-export const BannerSliderTop = ({}) => {
+export const BannerSliderTop = ({leftPosition, data}:{leftPosition: string, data: any}) => {
   return (
-    <div className="ml-0">
-      <div className="w-full flex flex-col justify-center sm:w-[900px] w-[1280px]">
-        <div className="w-full flex justify-center">
-          
-          <h3 className=" flex flex-wrap text-4xl font-bold mb-[90px] mt-[10px] text-center">Why small businesses & start-ups love AdEase</h3>
-        </div>
-          <div className="flex md:flex-row sm:flex-col md:justify-between space-x-[56px]">
+      <div style={{left : leftPosition}} className={`snap-center absolute w-full flex flex-col items-center max-w-[1280px] sm:w-[300px]`}>
 
+        <h3 className=" flex flex-wrap text-4xl font-bold mb-[90px] mt-[10px] lg:mb-[30px] sm:text-2xl text-center">{data.header}</h3>
+
+        <div className="flex lg:flex-col justify-between lg:items-center lg:justify-center">
+        <div className="flex justify-center w-[400px] h-[300px] sm:w-[300px] sm:h-[200px] relative">
           <Image
-            src='/img/homepage/bannerEnd/scroll1.png'
+            src={data.avatar}
             alt='logo'
-            width={400}
-            height={400}
-            className="rounded-lg"
+            width={300}
+            height={200}
+            className="rounded-[24px] object-cover sm:object-fill"
             quality={60}
           />
+        </div>
 
-          <div className="flex w-full flex-col justify-center justify-items-center">
-            <div className="flex flex-col max-w-[630px] min-h-[386px] ">
-              <p className="text-lg text-2xl text-center">
-                Being a director of photography and a business owner can be overwhelming at times. To add digital marketing workload on the list would greatly impact my efficiently and the ability to stay creative focus on growing the business.
-              </p>
-              <div className="flex justify-center my-[36px]">
-                <div className="w-[78px] h-[3px] bg-primary items-center"></div>
-              </div>
-              
-              <p className="text-2xl font-bold text-center">
-                MR JOSH LE
-              </p>
-              <p className="text-base text-center">
-                Founder of Mango Media Studio
-              </p>
-              <div className="w-full flex justify-center mt-10">
-                <div className="flex flex-row space-x-[12px]">
-                  <Image src="/img/homepage/bannerEnd/icon_change_slider.svg" alt="slider" width={16} height={16} />
-                  <Image src="/img/homepage/bannerEnd/icon_change_slider_active.svg" alt="slider" width={16} height={16} />
-                  <Image src="/img/homepage/bannerEnd/icon_change_slider.svg" alt="slider" width={16} height={16} />
-                  <Image src="/img/homepage/bannerEnd/icon_change_slider.svg" alt="slider" width={16} height={16} />
-                </div>
-              </div>
-                
-              
+        <div className="flex w-full flex-col justify-center items-center mt-7 lg:mt-4">
+          <div className="flex flex-col max-w-[630px] min-h-[386px] ">
+            <p className="text-lg text-2xl text-center sm:text-base">
+              {data.content}
+            </p>
+            <div className="flex justify-center my-[36px]">
+              <div className="w-[78px] h-[3px] bg-primary items-center"></div>
             </div>
+            
+            <p className="text-2xl font-bold text-center">
+              {data.author}
+            </p>
+            <p className="text-base text-center">
+              {data.role}
+            </p>
+            
           </div>
         </div>
       </div>
     </div>
-    
   )
-  
 }

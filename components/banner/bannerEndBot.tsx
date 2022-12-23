@@ -15,7 +15,10 @@ export default function BannerEndBot (){
             })}
             
           </div>
-      <button className="rounded-full bg-primary py-2 px-4 text-white hover:bg-primarylight">Try now for free </button>
+          <div className="w-full flex justify-center">
+            
+            <button className="rounded-full bg-primary py-2 px-4 text-white hover:bg-primarylight">Try now for free </button>
+          </div>
       
     </div>
 	)
