@@ -4,8 +4,9 @@ import styles from './navbar.module.css';
 import {navLinks, navTools} from './data';
 import Link from 'next/link';
 import React, { useState, useEffect  } from 'react';
-import navbarAPI from "../../api/navbarAPI"
-import {NavbarJson} from "../../json/navbarJson"
+import navbarAPI from "../../api/navbarAPI";
+import {NavbarJson} from "../../json/navbarJson";
+import userAPI from "../../api/userAPI";
 
 export default function Navbar({items}:{items:any}) {
 
@@ -75,6 +76,17 @@ export default function Navbar({items}:{items:any}) {
     )
   }
 
+  const handleSignIn = async() => {
+    const username = "quang";
+    const password = 123;
+
+    const a = await userAPI.create({data: {
+      username,
+      password,
+    }});
+    console.log(a);
+  }
+
 
   const NavTool = ({data}:{data:any}) => {
     return (
@@ -97,7 +109,7 @@ export default function Navbar({items}:{items:any}) {
         <li className={'sm:hidden ' + styles.divideTool}></li>
         <div className='hidden h-[0.5px] w-full bg-[#e5e7eb] sm:block'></div>
 
-        <NavItem data={data[1]} onClick={""}/>
+        <NavItem data={data[1]} onClick={handleSignIn}/>
 
         <div className="flex justify-center sm:w-full sm:mt-5">
           <button className="rounded-full bg-primary py-[11px] px-6 text-white flex flex-nowrap" >Request a demo</button>
